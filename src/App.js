@@ -33,7 +33,7 @@ setError(false);
   return <div>
     <h1>Login Page</h1>
     {error===true&& <h2>Invalid username or password</h2>}
-    {error===false&& <h2>Welcome, user!</h2>}
+    {error===false&& <h2>Welcome, user</h2>}
    {error===true ||error==="" ? <form onSubmit={(e)=>handleSubmit(e)}>
    <div>
      <label htmlFor='Username'>Username:</label>
