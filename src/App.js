@@ -34,17 +34,17 @@ setError(false);
     <h1>Login Page</h1>
     {error===true&& <h2>Invalid username or password</h2>}
     {error===false&& <h2>Welcome, user</h2>}
-   {error===true ||error==="" ? <form onSubmit={(e)=>handleSubmit(e)}>
+   {(error===true ||error==="" )&& <form onSubmit={(e)=>handleSubmit(e)}>
    <div>
      <label htmlFor='Username'>Username:</label>
-     <input placeholder='username' type='text' id='Username' required/>
+     <input placeholder='username' name='Username' type='text' id='Username' required/>
    </div>
    <div>
      <label htmlFor='Password'>Password:</label>
-     <input placeholder='password' type="password" id='Password' required/>
+     <input placeholder='password' name='Password' type="password" id='Password' required/>
    </div>
    <button type='submit'>Submit</button>
- </form>:null
+ </form>
   }
   </div>
 }
