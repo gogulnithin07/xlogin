@@ -12,8 +12,8 @@ function App() {
 function Login(){
   const [error,setError]=useState("");
   const obj={
-    userName:"gogul",
-    password:"123",
+    userName:"user",
+    password:"password",
   }
 
 function handleSubmit(e){
